@@ -1,0 +1,7 @@
+.card, input,  .alert ,textarea {
+    border-radius: 5px !important;
+} 
+
+label {
+    text-align: end;
+}

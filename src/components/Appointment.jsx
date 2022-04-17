@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import '../styles/Appointment.css'
 
 const Appointment = ({fetchData, deleteAppointment}) => {
@@ -14,6 +16,11 @@ const Appointment = ({fetchData, deleteAppointment}) => {
         <button className="btn btn-danger" onClick={() => deleteAppointment(fetchData.id)}>Borrar &times;</button>
     </div>
   )
+}
+
+Appointment.propTypes = {
+  fetchData: PropTypes.object.isRequired,
+  deleteAppointment: PropTypes.func.isRequired
 }
 
 export default Appointment

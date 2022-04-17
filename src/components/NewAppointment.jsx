@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import PropTypes from 'prop-types'
+
 import '../styles/NewAppointment.css'
 
 const stateInitial = {
@@ -142,6 +144,10 @@ class NewAppointment extends Component {
       </div>
     );
   }
+}
+
+NewAppointment.propTypes = {
+  readAppointment: PropTypes.func.isRequired
 }
 
 export default NewAppointment;

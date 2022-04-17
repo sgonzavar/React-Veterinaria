@@ -7,18 +7,30 @@
 }
 
 .media h3 {
-    color: rgb(60, 57, 57);
     text-transform: capitalize;
+    color: rgb(60, 57, 57);
     font-weight: bold;
+}
 
+.media button {
+    border-radius: 5px;
 }
 
 span {
+    color: rgb(60, 57, 57);
     font-weight: bold;
-    color: #fff;
 }
 
 p {
-    color: gray;
+    color: rgba(255, 255, 255, 0.739);
     font-weight: 700;
+}
+
+.media-body {
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    border-radius: 5px;
+    width: 98%;
+    padding: 15px;
+    line-height: 20px;
+    height: auto;
 }

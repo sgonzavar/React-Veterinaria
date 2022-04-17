@@ -14,9 +14,7 @@ const stateInitial = {
 }
 
 class NewAppointment extends Component {
-  state = {
-    appointment: {...stateInitial}
-  }
+  state = {...stateInitial}
 
   handleChange = (event) => {
     this.setState({
@@ -50,7 +48,7 @@ class NewAppointment extends Component {
 
   render() {
 
-    const error = this.state.error;
+    const { error } = this.state;
 
     return (
       <div className="card mt-5 py-2">
